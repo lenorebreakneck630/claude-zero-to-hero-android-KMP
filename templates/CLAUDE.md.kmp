@@ -1,0 +1,35 @@
+# CLAUDE.md — Android + KMP (shared domain + networking)
+
+## Always apply these skills
+
+- android-kmp-shared-module
+- android-kmp-ktor-serialization
+- android-presentation-mvi
+- android-compose-ui
+- android-data-layer
+- android-error-handling
+- android-di-koin
+- android-coroutines-flow
+- android-navigation
+- android-testing
+
+## Module rules
+
+- `commonMain` must have zero `android.*` imports
+- Repository interfaces in `commonMain`; Room/SQLDelight impls in `androidMain`
+- Ktor `HttpClient` factory in `commonMain`; engine (`OkHttp`/`Darwin`) injected per platform
+- `expect`/`actual` only for genuinely platform-divergent behaviour
+
+## Patterns to follow
+
+- Domain models: plain Kotlin `data class` — no Android annotations
+- Network: `safeApiCall` wrapping every Ktor call → `Result<T, DataError.Network>`
+- State: `StateFlow` in shared code; KMP-NativeCoroutines for iOS consumption
+- ViewModel: Android `ViewModel` on Android; `CommonViewModel` base for shared logic
+
+## Do not
+
+- Put `android.*`, `androidx.*`, or `com.google.*` imports in `commonMain`
+- Use Room in `commonMain` — use SQLDelight or keep Room in `androidMain`
+- Use `Dispatchers.Main` directly — inject dispatcher
+- Use `GlobalScope`

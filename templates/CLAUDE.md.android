@@ -1,0 +1,33 @@
+# CLAUDE.md — Android (Compose + MVI + Koin)
+
+## Always apply these skills
+
+- android-presentation-mvi
+- android-compose-ui
+- android-data-layer
+- android-error-handling
+- android-di-koin
+- android-coroutines-flow
+- android-navigation
+- android-testing
+
+## Module rules
+
+- `feature` modules depend on `core:domain` only — never on `core:data` or other feature modules
+- `core:data` depends on `core:domain`
+- `app` assembles all DI modules and owns the nav host
+
+## Patterns to follow
+
+- Every screen: `State` + `Action` + `Event` in a sealed hierarchy
+- ViewModel exposes `StateFlow<State>` and `fun onAction(Action)`
+- Navigation events via `Channel`, collected in root composable with `LaunchedEffect`
+- Repositories return `Result<T, DataError>` — never throw across boundaries
+- Tests use `FakeRepository` — no Mockito or MockK
+
+## Do not
+
+- Add business logic inside `@Composable` functions
+- Use `LiveData` — `StateFlow` only
+- Hardcode strings — all user-facing text in `strings.xml` via `UiText`
+- Use `GlobalScope`
